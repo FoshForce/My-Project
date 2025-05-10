@@ -66,6 +66,21 @@ class Card :
             return self.__card_id
         else : 
             return "Invalid PIN"
+        
+class transaction :
+    def __init__(self, account, amount, transaction_type) :
+        self.__account = account
+        self.__amount = amount
+        self.__transaction_type = transaction_type
+        
+    def get_account(self) :
+        return self.__account
+    
+    def get_amount(self) :
+        return self.__amount
+    
+    def get_transaction_type(self) :
+        return self.__transaction_type
  
 card1 = Card(67010751, '094615')    
 person1 = Customer("Yokphon", 1349901370146)
